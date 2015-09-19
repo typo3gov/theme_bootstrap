@@ -1,3 +1,8 @@
+# This is only a demo. It won`t be activated automatically as overwriting
+# user TSconfig with themes could cause conflicts especially in multi-site
+# setups. To activate this user TSconfig insert the following line into your
+# BE user / user-group options field:
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap/Configuration/UserTS/role.editor.userts">
 options {
   # Allow the editor to clear the page cache
   clearCache.pages = 1
