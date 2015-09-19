@@ -1,10 +1,16 @@
+# This is only a demo. It won`t be activated automatically as overwriting
+# user TSconfig with themes could cause conflicts especially in multi-site
+# setups. To activate this user TSconfig insert the following line into your
+# BE user / user-group options field:
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap/Configuration/UserTS/role.admin.userts">
+
 options {
-  # Show page uids in page tree
+  # Show page (u)Ids in the page tree
   pageTree.showPageIdWithTitle = 1
   # Adds a clear-cache button for the system-cache
   clearCache.system = 1
 }
 admPanel {
-  # Caching der externen TS-Files deaktivieren
+  # Disable caching of external TS files
   override.tsdebug.forceTemplateParsing = 1
 }
